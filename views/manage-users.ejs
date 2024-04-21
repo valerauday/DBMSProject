@@ -1,0 +1,21 @@
+<!-- manage-users.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Users</h1>
+        <ul>
+            <% users.forEach(user => { %>
+                <li><%= user.username %> - <%= user.email %></li>
+            <% }); %>
+        </ul>
+        <!-- Add form for adding new users, editing existing users, etc. -->
+    </div>
+</body>
+</html>

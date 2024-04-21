@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        <!-- Display candidate list -->
+        <h2>Candidate List</h2>
+        <ul>
+            <li>Candidate 1</li>
+            <li>Candidate 2</li>
+            <!-- Add more candidates dynamically or fetch from database -->
+        </ul>
+        <!-- Voting form -->
+        <form action="/vote" method="POST">
+            <select name="candidate" required>
+                <option value="">Select Candidate</option>
+                <option value="1">Candidate 1</option>
+                <option value="2">Candidate 2</option>
+                <!-- Add more candidates dynamically or fetch from database -->
+            </select>
+            <button type="submit" class="button">Vote</button>
+        </form>
+        <!-- Other user actions -->
+        <a href="/profile">Manage Profile</a>
+        <a href="/election-result">Election Result</a>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>
